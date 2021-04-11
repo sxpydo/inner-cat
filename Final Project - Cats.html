@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap"
+      rel="stylesheet"
+    />
+    <title>Find your inner cat! 🐈</title>
+    <style>
+      body {
+        background-color: #64c4ed;
+        font-family: "Pangolin", cursive;
+      }
+
+      h1 {
+        text-align: center;
+        color: #ffffff;
+        font-size: 67px;
+        line-height: 48px;
+      }
+
+      h2 {
+        text-align: center;
+        padding: 15px;
+        font-size: 20px;
+        color: #ffffff;
+        line-height: 1.5;
+      }
+
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 70%;
+        border: 2.5px solid #000000;
+        border-radius: 10px;
+      }
+
+      p {
+        line-height: 1.5;
+        margin: 20px 0 10px;
+        text-align: center;
+        font-size: 20px;
+      }
+
+      button {
+        display: block;
+        margin: 0 auto 20px;
+        padding: 15px 30px;
+        font-family: sans-serif;
+        font-size: 18px;
+        color: #ffffff;
+        background-color: #db2d43;
+        border: none;
+        border-radius: 30px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        transition: all 200ms ease-in-out;
+      }
+
+      button:hover {
+        background: #ffffff;
+        color: #db2d43;
+        opacity: 0.9;
+        cursor: pointer;
+      }
+
+      .container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 15px 60px;
+      }
+
+      .illustrations {
+        color: #000000;
+        text-decoration: none;
+        font-size: 12px;
+      }
+
+      .illustrations:hover {
+        text-decoration: underline;
+        cursor: pointer;
+      }
+
+      .footer {
+        text-align: center;
+        font-size: 16px;
+      }
+      .social-platform {
+        color: #000000;
+      }
+
+      .social-platform:hover {
+        font-weight: bold;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Find Your Inner Cat</h1>
+      <h2>
+        Live your life with cattitude and nurture your "resting aristocratic
+        face."
+      </h2>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/006/044/original/Main_photo_-_Cats?1616756092"
+        alt="Man looking at his cat reflection in the mirror"
+      />
+
+      <a
+        href="https://https://www.doogiehorner.com/"
+        target="_blank"
+        class="illustrations"
+      >
+        Illustrations by Doogie Horner
+      </a>
+
+      <p>
+        A cat's most <em>important</em> trait is their personality. <br />
+        What's new pussycat? Grab a meow-tini and find your inner
+        <strong>claw-some</strong>! <br />
+        It's meow or never!
+      </p>
+      <br />
+      <button class="paw-button">What's the paw-sibility...</button>
+      <br />
+      <hr />
+      <p class="footer">
+        Connect on
+        <a
+          href="https://www.linkedin.com/in/shavana-peynado-a22a921a2"
+          target="_blank"
+        >
+          <span class="social-platform">LinkedIn</span></a
+        >
+        or
+        <a href="https://www.instagram.com/sxpydo" target="_blank">
+          <span class="social-platform">Instagram</span></a
+        >
+        ~ Coded by Shavana Peynado
+      </p>
+    </div>
+    <script>
+      function innerCat() {
+        let name = prompt("What is your name?");
+
+        name = name.trim();
+
+        if (name === "") {
+          alert("Please write your name! 😾");
+          innerCat();
+        } else {
+          let month = prompt(
+            "What month is your birthday? (Numbers from 1 to 12 or name in full!)"
+          );
+          let paragraph = document.querySelector("p");
+          let img = document.querySelector("img");
+
+          month = month.toLowerCase();
+          month = month.trim();
+
+          if (month === "january" || month === "1") {
+            img.src =
+              "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/006/049/original/Lucky_cat_-_1.jpg?1616756348";
+            paragraph.innerHTML =
+              " YOJIMBO - Japanese Lucky Cat </br>" +
+              name +
+              ", Let me tell you the tail of a Samurai that entered the shop and brought a bottle of sword polish and a lottery ticket that ended up winning 1.5 pounds of gold power, all because he saw a smiling cat beckoned to him from a shop window! Since then, you kitty cats have been considered wise and lucky spirits.";
+          } else if (month === "february" || month === "2") {
+            img.src =
+              "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/006/050/original/Mountain_climber_-_2.jpg?1616757218";
+            paragraph.innerHTML =
+              "SNOWBALL - Mountain Climber </br>" +
+              name +
+              ", Ambitious and hard-working, You are not afraid to get what you want in your nine lives!";
+          } else if (month === "march" || month === "3") {
+            img.src =
+              "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/006/020/original/Transformer_-_3.jpg?1616680594";
+            paragraph.innerHTML =
+              "KITTYTRON - Transformer </br>" +
+              name +
+              ", Resilient, Cat-astrophic and Devoted. You have a heart of gold and stomp through life with optimism!";
+          } else if (month === "april" || month === "4") {
+            img.src =
+              "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/006/037/original/Boots_-_4?1616756000";
+            paragraph.innerHTML =
+              "BOOTS - Psycho </br>" +
+              name +
+              ", You will go down in hiss-tory for throwing your paws at the world eagerly and without fear. You are not weighed down by the freedom of choice and least conflicted about what you want. Purr-haps, don't let your temper control you! You're purr-fect!";
+          } else if (month === "may" || month === "5") {
+            img.src =
+              "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/006/047/original/Consultant_-_5.jpg?1616756290";
+            paragraph.innerHTML =
+              "ROGER - Consultant </br>" +
+              name +
+              ", Smart, logical and trustworthy felines! You see the bright side to the darkest of times and you think more with your head than your heart.";
+          } else if (month === "june" || month === "6") {
+            img.src =
+              "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/006/046/original/Catfish_-_6.jpg?1616756261";
+            paragraph.innerHTML =
+              "RONALD - Catfish </br>" +
+              name +
+              ", Most cats don't like the water, but Ronald wasn't like most cats... </br> You are not shy of being different from the rest and purring your way into life spontaneously.";
+          } else if (month === "july" || month === "7") {
+            img.src =
+              "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/006/029/original/Imaginary.jpg?1616692754";
+            paragraph.innerHTML =
+              "NOODLES - Imaginary Friend </br>" +
+              name +
+              ", You are full of surprises purr-friend! An interesting personality and liked by all, you stand out from the crowd.";
+          } else if (month === "august" || month === "8") {
+            img.src =
+              "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/006/034/original/Artist_-_8.jpg?1616707328";
+            paragraph.innerHTML =
+              "HELMUT - Artist </br>" +
+              name +
+              ", Detail-oriented and thrive in creative spaces, Combine your headstrong approach to life with your intelligence and you are unstoppable. We know fur-sure that we are with good company!";
+          } else if (month === "september" || month === "9") {
+            img.src =
+              "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/006/041/original/Princess_-_9?1616756031";
+            paragraph.innerHTML =
+              "FLUFFKINS - Princess </br>" +
+              name +
+              ", Purrfectionist that wants to do things their own way, and you will keep on trying until the desired result is achieved. ";
+          } else if (month === "october" || month === "10") {
+            img.src =
+              "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/006/048/original/Your_boss_-_10.jpg?1616756324";
+            paragraph.innerHTML =
+              "MR BIGGLE - Your Boss </br>" +
+              name +
+              ", Watch out: Biggle's one tough kitten! You almost always get you way. All you have to do is think about what you desire and it often will happen. Indulge your passion for being the fastest mouse catcher!";
+          } else if (month === "november" || month === "11") {
+            img.src =
+              "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/006/019/original/Viking_-_11.jpg?1616680571";
+            paragraph.innerHTML =
+              "HJALMAR - The Cat Viking </br>" +
+              name +
+              ", You are a warrior! Courageous, family oriented with paw-some strengths. Never afraid to stand by your values!";
+          } else if (month === "december" || month === "12") {
+            img.src =
+              "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/006/021/original/Christmas_cat_-_12.jpg?1616680609";
+            paragraph.innerHTML =
+              "SCROOGE - Purr Humbug Cat </br>" +
+              name +
+              ", You are cheerful and nothing stops you from living life at its fullest. (After a few coffees!) </br> Don't be a sour-puss because you're fur-bulous!";
+          } else {
+            img.src =
+              "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/006/082/original/Whoops!_2.jpg?1616877618";
+            paragraph.innerHTML =
+              "Meow! That's not a birthday month, try again!";
+          }
+        }
+      }
+
+      let buyButton = document.querySelector(".paw-button");
+      buyButton.addEventListener("click", innerCat);
+    </script>
+  </body>
+</html>
