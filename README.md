@@ -6,3 +6,5 @@ Then I had decided to take this project to the next level, not only cover the co
 Instead of making my webpage factual, I added a twist of quirk and fun to attract my audience with the influence of reading a book during lockdown 2.0 called "Some Very Interesting Cats Perhaps You Weren't Aware Of" by Doogie Horner. An illustrated book of short stories and cartoons about cats, most of which are comical.
 
 Using the images from the book to form my inner cats that can relate to my audience following by keeping the influence of formatting style and color palettes from the book.  
+
+Here is the link to my final project called "Find Your Inner Cat" - https://www.shecodes.io/workshops/shecodes-online-workshop-59-0/projects/301831
