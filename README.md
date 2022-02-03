@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/a477101f-9215-41fb-92dc-8c7200cef95c/deploy-status)](https://app.netlify.com/sites/inner-cat/deploys)
+
 # inner-cat 😺
 This is the first project that I have created using HTML, CSS and JavaScript.
 During my third week of the SheCodes Basics course, we were assigned a task to produce our very own webpage on a topic/subject that were a passionate about as the "Final Project."
